@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NICHO | Specialty Coffee</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#f3ede6;
+color:#2c2c2c;
+line-height:1.6;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url('portada.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+color:white;
+}
+
+.hero-content{
+max-width:800px;
+}
+
+.hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:6rem;
+letter-spacing:4px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:1.3rem;
+letter-spacing:2px;
+margin-bottom:35px;
+}
+
+.buttons{
+display:flex;
+gap:15px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.btn{
+background:white;
+color:#7d2b2b;
+padding:14px 28px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+.section{
+padding:90px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.section-title{
+font-family:'Cormorant Garamond',serif;
+font-size:3rem;
+text-align:center;
+margin-bottom:20px;
+color:#7d2b2b;
+}
+
+.subtitle{
+text-align:center;
+max-width:800px;
+margin:auto;
+color:#666;
+margin-bottom:50px;
+}
+
+.buscador{
+max-width:600px;
+margin:0 auto 40px;
+}
+
+.buscador input{
+width:100%;
+padding:18px;
+border:none;
+border-radius:18px;
+font-size:16px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+outline:none;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:25px;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+font-family:'Cormorant Garamond',serif;
+font-size:2rem;
+margin-bottom:20px;
+color:#7d2b2b;
+}
+
+.item{
+padding:12px 0;
+border-bottom:1px solid #ececec;
+}
+
+.item small{
+color:#777;
+}
+
+.contact{
+background:white;
+text-align:center;
+padding:90px 20px;
+}
+
+.contact-buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:25px;
+}
+
+.contact-buttons a{
+background:#7d2b2b;
+color:white;
+padding:14px 28px;
+border-radius:50px;
+text-decoration:none;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:4rem;
+}
+
+.section-title{
+font-size:2.3rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>NICHO</h1>
+
+<p>Specialty Coffee</p>
+
+<div class="buttons">
+
+<a href="#menu" class="btn">Ver Menú</a>
+
+<a href="https://www.instagram.com/nichospecialtycoffee/" target="_blank" class="btn">
+Instagram
+</a>
+
+<a href="https://maps.app.goo.gl/QbsfNyet3VMFo7WK8" target="_blank" class="btn">
+Cómo llegar
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Nuestra Propuesta
+</h2>
+
+<p class="subtitle">
+Un espacio pensado para disfrutar café de especialidad, brunch, pastelería artesanal y experiencias gastronómicas cuidadosamente elaboradas.
+</p>
+
+</section>
+
+<section id="menu" class="section">
+
+<h2 class="section-title">
+Menú
+</h2>
+
+<div class="buscador">
+<input type="text" id="buscador" placeholder="Buscar en la carta...">
+</div>
+
+<div class="menu-grid">
+
+<div class="card">
+
+<h3>Café</h3>
+
+<div class="item">Espresso</div>
+<div class="item">Ristretto</div>
+<div class="item">Doppio</div>
+<div class="item">Americano</div>
+<div class="item">Latte</div>
+<div class="item">Capuchino</div>
+<div class="item">Flat White</div>
+<div class="item">Matcha Latte</div>
+
+</div>
+
+<div class="card">
+
+<h3>Tés</h3>
+
+<div class="item">Oriental Summer</div>
+<div class="item">Love Yourself</div>
+<div class="item">Royal Fruit</div>
+
+</div>
+
+<div class="card">
+
+<h3>Jugos Especiales</h3>
+
+<div class="item">Maracucha</div>
+<div class="item">Limonada de la Casa</div>
+<div class="item">Limonicho</div>
+<div class="item">Frutty</div>
+
+</div>
+
+<div class="card">
+
+<h3>Tostones</h3>
+
+<div class="item">
+Avocado Toast<br>
+<small>Palta, cherry y semillas</small>
+</div>
+
+<div class="item">
+Green Toast<br>
+<small>Hongos, brócoli y queso crema</small>
+</div>
+
+<div class="item">
+French Toast<br>
+<small>Mascarpone y frutos rojos</small>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>Bowls</h3>
+
+<div class="item">
+Yogurt Bowl<br>
+<small>Frutas, granola y miel</small>
+</div>
+
+<div class="item">
+Smoothie Bowl<br>
+<small>Banana, frutos rojos y Nutella</small>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>Huevos</h3>
+
+<div class="item">
+Antojo Saludable<br>
+<small>Palta, frutas y semillas</small>
+</div>
+
+<div class="item">
+Mbejú<br>
+<small>Queso fontina y huevo poché</small>
+</div>
+
+<div class="item">
+Spinach<br>
+<small>Espinaca, hongos y queso crema</small>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>Sándwiches</h3>
+
+<div class="item">
+Jamón y Queso Dambo
+</div>
+
+<div class="item">
+Jamón Crudo y Gouda
+</div>
+
+<div class="item">
+Escabeche de Berenjena
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>Pastelería</h3>
+
+<div class="item">Cheesecake</div>
+<div class="item">Torta del Día</div>
+<div class="item">Croissant</div>
+<div class="item">Cookies New York</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Información
+</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+
+<h3>📍 Ubicación</h3>
+
+<p>
+Concepción del Uruguay<br>
+Entre Ríos
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🕒 Horarios</h3>
+
+<p>
+Lunes a Viernes<br>
+08:00 a 12:00<br>
+16:00 a 20:00
+</p>
+
+<br>
+
+<p>
+Sábados y Domingos<br>
+08:30 a 13:30<br>
+16:00 a 20:00
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📸 Redes</h3>
+
+<p>
+Seguinos en Instagram para conocer novedades y lanzamientos.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2 class="section-title">
+Visitanos
+</h2>
+
+<p>
+NICHO Specialty Coffee
+</p>
+
+<div class="contact-buttons">
+
+<a href="https://www.instagram.com/nichospecialtycoffee/" target="_blank">
+Instagram
+</a>
+
+<a href="https://maps.app.goo.gl/QbsfNyet3VMFo7WK8" target="_blank">
+Google Maps
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+NICHO · Specialty Coffee
+</p>
+
+</footer>
+
+<script>
+
+const buscador = document.getElementById("buscador");
+
+buscador.addEventListener("keyup", function(){
+
+let texto = buscador.value.toLowerCase();
+
+let cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+
+let contenido = card.textContent.toLowerCase();
+
+if(contenido.includes(texto)){
+card.style.display = "block";
+}else{
+card.style.display = "none";
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
